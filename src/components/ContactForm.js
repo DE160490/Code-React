@@ -10,14 +10,14 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <LocalForm onSubmit={this.handleSubmit}>
+      <LocalForm model="user" onSubmit={this.handleSubmit}>
         <label>Name: </label>
-        <Control.text model=".name" validators={{ require: this.required }} />
+        <Control.text model=".name" validators={{ required: this.required }} />
         <span className="error">
           <Errors
             model=".name"
             show="touched"
-            messages={{ require: "Name is required" }}
+            messages={{ required: "Name is required" }}
           ></Errors>
         </span>
         <button type="submit">Submit</button>
