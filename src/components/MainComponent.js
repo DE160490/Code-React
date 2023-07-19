@@ -17,6 +17,7 @@ import {
   fetchDishes,
   fetchComments,
   fetchPromos,
+  postComment,
 } from "../redux/ActionCreators";
 
 import { connect } from "react-redux";
@@ -53,6 +54,8 @@ const mapDispatchToProps = (dispatch) => ({
   },
   fetchComments: () => dispatch(fetchComments()),
   fetchPromos: () => dispatch(fetchPromos()),
+  postComment: (dishId, rating, author, comment) =>
+    dispatch(postComment(dishId, rating, author, comment)),
 });
 
 class Main extends Component {
@@ -132,6 +135,7 @@ class Main extends Component {
           )}
           commentsErrMess={this.props.comments.errMess}
           addComment={this.props.addComment}
+          postComment={this.props.postComment}
         />
       );
     };

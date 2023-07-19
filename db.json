@@ -201,6 +201,22 @@
       "comment": "It's your birthday, we're gonna party!",
       "author": "25 Cent",
       "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "rating": "2",
+      "author": "13121231",
+      "comment": "12312",
+      "date": "2023-07-19T01:03:58.843Z",
+      "id": 20
+    },
+    {
+      "dishId": 0,
+      "rating": "2",
+      "author": "1312",
+      "comment": "Xin Chào",
+      "date": "2023-07-19T01:06:16.870Z",
+      "id": 21
     }
   ],
   "promotions": [
