@@ -217,6 +217,13 @@
       "comment": "Xin Chào",
       "date": "2023-07-19T01:06:16.870Z",
       "id": 21
+    },
+    {
+      "dishId": "1",
+      "rating": "Marco Watson",
+      "author": "hi",
+      "date": "2023-07-19T01:20:28.178Z",
+      "id": 22
     }
   ],
   "promotions": [

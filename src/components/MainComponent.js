@@ -22,6 +22,7 @@ import {
 
 import { connect } from "react-redux";
 import { actions } from "react-redux-form";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const mapStateToProps = (state) => {
   return {
@@ -142,6 +143,12 @@ class Main extends Component {
 
     return (
       <div>
+        {/* <TransitionGroup>
+          <CSSTransition
+            key={this.props.location.key}
+            classNames="page"
+            timeout={300}
+          > */}
         <Header />
         <Routes>
           <Route path="/home" element={<HomePage />} />
@@ -162,6 +169,8 @@ class Main extends Component {
           <Route path="/menu/:dishId" element={<DishWithId />} />
         </Routes>
         <Footer />
+        {/* </CSSTransition>
+        </TransitionGroup> */}
       </div>
     );
   }
